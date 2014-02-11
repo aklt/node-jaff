@@ -49,6 +49,12 @@ lines.  The output might look like this:
             7      -rw-r--r--   1 root    root     3312 Jul 14  2011 screenrc
             8      -rw-r--r--   1 root    root     1437 Apr 25  2011 slsh.rc
 
+## Install
+
+Using npm:
+
+    npm install jaff
+
 ## Invocation
 
 This program takes a single argument:
@@ -82,7 +88,7 @@ Also note that begin blocks are cumulative meaning that all `begin` blocks will
 use the same environment to place functions and variables.
 
 The addition of `begin` blocks containing javascript code was inspired by
-[pym](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.25.400).
+<a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.25.400" target="_blank">PYM - A Macro Preprocessor Based on Python</a>.
 
 ### `end`
 
