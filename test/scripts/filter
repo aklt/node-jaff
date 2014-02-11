@@ -1,0 +1,15 @@
+#begin coffee
+
+filter1 = 'nl'
+
+#end
+Blank line
+#filter {filter1}
+#  filter sed -e s/^/--/
+These
+lines
+become
+numbered
+#  end
+#end
+Out!

@@ -1,0 +1,36 @@
+{
+  "name": "jaff",
+  "description": "Jaff Ain't Filtering Files",
+  "version": "0.0.0",
+  "author": "Anders Thøgersen <anders@bladre.dk>",
+  "keywords": [
+    "macro",
+    "preprocessor",
+    "generic",
+    "javascript",
+    "coffee-script",
+    "filtering",
+    "piping"
+    ],
+  "licenses": [ "MIT" ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aklt/node-jaff.git"
+  },
+  "bin": {
+    "jaff": "./bin/jaff"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "mocha": "= 1.17.1",
+    "diff": "= 1.0.8"
+  },
+  "dependencies": {
+    "coffee-script": "= 1.7.1"
+  }
+}

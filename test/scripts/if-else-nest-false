@@ -1,0 +1,11 @@
+before
+#if false
+#   if false
+        branch 1
+#   else
+        branch 4
+#   end
+#else
+    foo
+#end
+after

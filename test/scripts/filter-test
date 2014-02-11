@@ -1,0 +1,14 @@
+#begin coffee
+
+filter1 = 'coffee --bare -c'
+
+echo = (lines) ->
+  return lines.map (line) ->
+    console.warn "HELLO!!!! #{line}\n"
+
+#end
+Blank line
+#filter 
+foo + bar
+#end
+Out!

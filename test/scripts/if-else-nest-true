@@ -1,0 +1,15 @@
+before
+#if true
+#   if false
+        branch 1
+#   elif false
+        branch 2
+#   elif false
+        branch 3
+#   else
+        branch 4
+#   end
+#else
+    foo
+#end
+after

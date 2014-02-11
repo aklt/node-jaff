@@ -1,0 +1,9 @@
+#if false
+false
+#elif true
+true 1
+#elif true
+true 2
+#else
+hmmm
+#end

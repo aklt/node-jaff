@@ -1,0 +1,23 @@
+//begin js
+var jsVar = 10;
+
+//end
+Language: {__language}
+jsVar:    {jsVar}
+#begin coffee
+coffeeVar = """Foo
+  is the thing bar
+
+  all the time
+"""
+#end
+Language: {__language}
+coffeeVar: {coffeeVar}
+#if false
+#include if-elif-else-end.cmac
+#include include1.js
+#else
+Potatoes
+version {__version}
+expand {__expand}
+#end

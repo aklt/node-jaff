@@ -1,0 +1,23 @@
+#begin coffee
+indent = (lines) ->
+  return lines.map (line) ->
+    return '    ' + line
+
+folder = "/etc"
+#end
+
+#if process.env.TEST
+foo
+#else
+bar
+#end
+
+Contents of the {folder} folder
+#filter !indent
+#  filter nl
+#    filter grep rc$
+#    run ls -la {folder}
+#    end
+#  end
+#end
+

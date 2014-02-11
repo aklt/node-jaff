@@ -1,0 +1,10 @@
+#if false
+branch1
+#include if-else-false
+#elif false
+branch2
+#include if-else-nest-false
+#else
+branch3
+#include if-else-true
+#end

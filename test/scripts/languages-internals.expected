@@ -1,0 +1,10 @@
+Language: js
+jsVar:    10
+Language: coffee
+coffeeVar: Foo
+is the thing bar
+
+all the time
+Potatoes
+version 0.0.1
+expand {,}

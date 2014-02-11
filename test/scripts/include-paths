@@ -1,0 +1,6 @@
+#begin coffee
+
+master = "include/foo/bar/master"
+
+#end
+#include {master}

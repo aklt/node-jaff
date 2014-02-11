@@ -1,0 +1,12 @@
+#begin coffee
+
+get = 'if-else'
+
+#end
+Getting {get}
+#if false
+#include {get}-false
+#else
+#include {get}-true
+#end
+And that was it

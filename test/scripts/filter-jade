@@ -1,0 +1,21 @@
+#begin coffee
+
+foo = 12
+
+fun = (lines) ->
+  return lines.map (l) -> '  Hello ' + l
+
+#end
+<pre>
+#filter !fun
+#run tree /tmp
+#filter xxd
+#filter uglifyjs --compress --mangle
+function dirname(str) {
+    var m = /^(.*?)[^\/]+$/.exec(str);
+    return path.resolve(m[1] || '.');
+}
+#end
+#end
+#end
+</pre>

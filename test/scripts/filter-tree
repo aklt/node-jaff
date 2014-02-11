@@ -1,0 +1,22 @@
+#begin
+
+dir = '/tmp'
+
+indent = (lines) ->
+  return lines.map (line) ->
+    line.replace /^/, '        '
+
+#end
+
+#if false
+
+The indent function is
+...
+
+#else
+#filter !indent
+#run ls {dir}
+#end
+Sweet beans
+#end
+

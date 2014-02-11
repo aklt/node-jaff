@@ -1,0 +1,7 @@
+before
+#if true
+branch 1
+#else
+branch 2
+#end
+after
