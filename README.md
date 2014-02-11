@@ -1,5 +1,7 @@
 # Jaff Appends and Filters Files
 
+[![build status](https://secure.travis-ci.org/aklt/node-jaff.png)](http://travis-ci.org/aklt/node-jaff)
+
 Jaff is a small macro language that allows conditional filtering of Files through
 external programs and Javascript or Coffeescript functions in a way similar to
 commandline pipes between programs.  Jaff scripts can be written to cumulatively
@@ -34,7 +36,7 @@ otherwise. Next it will list the contents of the `/etc` folder, filter out files
 ending with `"rc"`, prepend a line number to each line and finally indent these
 lines.  The output might look like this:
 
-    $ jaff example 
+    $ jaff example
 
     bar
 
@@ -92,7 +94,7 @@ The addition of `begin` blocks containing javascript code was inspired by
 
 ### `end`
 
-The `end` keyword ends the nearest `begin`, `if` or `filter` block.  
+The `end` keyword ends the nearest `begin`, `if` or `filter` block.
 
 ### `if <condition>`, `elif <condition>`, `else` ... `end`
 
@@ -146,7 +148,7 @@ correctly into account.
 ### `{code}`
 
 Run code as javascript. The code may reference variables and functions declared
-in `begin ... end` blocks.  This code may reference variables and functions that 
+in `begin ... end` blocks.  This code may reference variables and functions that
 are globals in node as well as some special variables:
 
 * `__version` The version of jaff
