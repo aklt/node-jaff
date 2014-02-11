@@ -1,7 +1,7 @@
 {
   "name": "jaff",
   "description": "Jaff Ain't Filtering Files",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Anders Thøgersen <anders@bladre.dk>",
   "keywords": [
     "macro",
@@ -11,8 +11,10 @@
     "coffee-script",
     "filtering",
     "piping"
-    ],
-  "licenses": [ "MIT" ],
+  ],
+  "licenses": [
+    "MIT"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/aklt/node-jaff.git"
