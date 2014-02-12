@@ -18,6 +18,5 @@ coffeeVar: {coffeeVar}
 #include include1.js
 #else
 Potatoes
-version {__version}
 expand {__expand}
 #end
