@@ -76,7 +76,8 @@ Alternatively a script can be written invoking jaff via the shebang line:
 
 The following keywords are defined: `begin`, `end`, `if`, `elif`, `else`,
 `include`, `filter` and `run`.  Keywords appear following a comment at the
-beginning of a line.
+beginning of a line.  Both Javascript `//` and Coffeescript comments `#` are
+accepted and there may be whitespace between the comment and the keyword.
 
 ### `begin <js|coffee>` ... `end`
 
