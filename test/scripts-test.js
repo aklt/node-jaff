@@ -14,6 +14,7 @@ describe('Running scripts', function () {
     runScriptTest('begin-if-else-include');
     runScriptTest('languages-internals');
     runScriptTest('include-paths');
+    runScriptTest('filter-must-shell-escape');
 });
 
 describe('script errors', function () {
