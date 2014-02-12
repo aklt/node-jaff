@@ -1,7 +1,7 @@
 {
   "name": "jaff",
   "description": "Jaff Ain't Filtering Files",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Anders Thøgersen <anders@bladre.dk>",
   "keywords": [
     "macro",
@@ -36,6 +36,5 @@
   "dependencies": {
     "coffee-script": "= 1.7.1",
     "shell-quote": "= 1.4.1"
-
   }
 }
