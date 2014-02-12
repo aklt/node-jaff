@@ -55,7 +55,7 @@ lines.  The output might look like this:
 
 Using npm:
 
-    npm install jaff
+    npm install -g jaff
 
 ## Invocation
 
