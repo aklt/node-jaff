@@ -22,6 +22,7 @@
   "bin": {
     "jaff": "./bin/jaff"
   },
+  "main": "./lib/index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha"
   },
