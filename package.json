@@ -33,6 +33,8 @@
     "diff": "= 1.0.8"
   },
   "dependencies": {
-    "coffee-script": "= 1.7.1"
+    "coffee-script": "= 1.7.1",
+    "shell-quote": "= 1.4.1"
+
   }
 }
