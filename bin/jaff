@@ -3,7 +3,6 @@
 var util = require('util'),
     jaff = require('../');
 
-
 function usage() {
     process.stdout.write('Usage: jaff [filename]\n\n  stdin will be read if no filename argument is given\n\n');
 }
@@ -14,6 +13,8 @@ if (process.argv.length === 2) {
     var arg = process.argv[2];
     if (/^--?he?l?p?$/.test(arg)) {
         usage();
+    } else if (/^--?ve?r?s?i?o?n?/.test(arg)) {
+        process.stdout.write('Jaff v' + jaff.version + '\n');
     } else {
         jaff.readFromUrl(arg).pipe(process.stdout);
     }
