@@ -1,8 +1,24 @@
-/*global describe, it*/
+/*global console, describe, it*/
 
 var utils = require('./utils'),
     scripts = __dirname + '/scripts/',
+    child_process = require('child_process'),
     assert = require('assert');
+
+console.warn('Scripts', scripts);
+
+describe('stdin', function () {
+    it('can be piped through', function (done) {
+        child_process.exec('echo foo | ./bin/jaff',
+            function (err, stdout, stderr) {
+                if (err) {
+                    return done(err);
+                }
+                assert.equal('foo\n', stdout);
+                done();
+            });
+    });
+});
 
 describe('Running scripts', function () {
     runScriptTest('if-else-false');
