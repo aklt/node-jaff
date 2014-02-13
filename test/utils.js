@@ -1,9 +1,12 @@
+/*global console*/
 var fs = require('fs'),
     util = require('util'),
     path = require('path'),
     cp = require('child_process'),
     diff = require('diff'),
     bin = path.normalize(__dirname + '/../bin/jaff');
+
+console.warn('Running', bin);
 
 function diffWithExpected(inFile, expectedFile, cb) {
     var cmd = bin + ' ' + inFile;
