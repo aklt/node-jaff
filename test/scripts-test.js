@@ -3,7 +3,7 @@
 var utils = require('./utils'),
     scripts = __dirname + '/scripts/',
     child_process = require('child_process'),
-    assert = require('assert');
+    expect = require('unexpected');
 
 console.warn('Scripts', scripts);
 
@@ -14,7 +14,7 @@ describe('stdin', function () {
                 if (err) {
                     return done(err);
                 }
-                assert.equal('foo\n', stdout);
+                expect(stdout, 'to equal', 'foo\n');
                 done();
             });
     });
@@ -39,8 +39,7 @@ describe('script errors', function () {
     it('recursive includes error', function (done) {
         utils.diffWithExpected(scripts + 'include-recursive', '',
             function (err) {
-                assert.ok(
-                    err.message.indexOf('Cannot circularly include') > 0);
+                expect(err.message, 'to contain', 'Cannot circularly include');
                 done();
             });
     });

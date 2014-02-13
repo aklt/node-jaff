@@ -1,6 +1,6 @@
 
 fs = require 'fs'
-assert = require 'assert'
+expect = require 'unexpected'
 LinesTransform = require '../lib/LinesTransform'
 
 describe 'LinesTransform', ->
@@ -13,6 +13,6 @@ describe 'LinesTransform', ->
       # console.warn 'Read', line
       lineCount += 1
     .on 'end', ->
-      assert.equal lineCount, 18
+      expect lineCount, 'to be', 18
       done()
     s1.pipe l1
