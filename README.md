@@ -1,6 +1,6 @@
 # Jaff Appends and Filters Files
 
-[![build status](https://secure.travis-ci.org/aklt/node-jaff.png)](http://travis-ci.org/aklt/node-jaff)
+[![build status](https://secure.travis-ci.org/aklt/node-jaff.png?branch=master)](http://travis-ci.org/aklt/node-jaff)
 
 Jaff is a small macro language that allows conditional filtering of Files through
 external programs and Javascript or Coffeescript functions in a way similar to
