@@ -4,7 +4,9 @@ var util = require('util'),
     jaff = require('../');
 
 function usage() {
-    process.stdout.write('Usage: jaff [filename]\n\n  stdin will be read if no filename argument is given\n\n');
+    process.stdout.write(
+        'Usage: jaff [filename]\n\n' +
+        'stdin will be read if no filename argument is given\n\n');
 }
 
 if (process.argv.length === 2) {
