@@ -33,6 +33,7 @@ describe('Running scripts', function () {
     runScriptTest('filter-must-shell-escape');
     runScriptTest('require-and-globals');
     runScriptTest('change-expand-quotes');
+    runScriptTest('with');
 });
 
 describe('script errors', function () {
