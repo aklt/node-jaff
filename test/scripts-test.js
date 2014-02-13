@@ -1,11 +1,13 @@
 /*global console, describe, it*/
 
-var utils = require('./utils'),
+var fs = require('fs'),
+    path = require('path'),
     scripts = __dirname + '/scripts/',
     child_process = require('child_process'),
-    expect = require('unexpected');
+    expect = require('unexpected'),
+    bin = path.normalize(__dirname + '/../bin/jaff');
 
-console.warn('Scripts', scripts);
+console.warn('Running', bin, 'on', scripts);
 
 describe('stdin', function () {
     it('can be piped through', function (done) {
@@ -37,23 +39,31 @@ describe('Running scripts', function () {
 
 describe('script errors', function () {
     it('recursive includes error', function (done) {
-        utils.diffWithExpected(scripts + 'include-recursive', '',
-            function (err) {
-                expect(err.message, 'to contain', 'Cannot circularly include');
-                done();
-            });
+        compareJaffWithExpected(scripts + 'include-recursive', '', function (err) {
+            expect(err, 'not to be null');
+            done();
+        });
     });
 });
 
 function runScriptTest(scriptName) {
     it(scriptName + ' passes', function (done) {
-        utils.diffWithExpected(scripts + scriptName,
+        compareJaffWithExpected(scripts + scriptName,
             scripts + scriptName + '.expected',
-            function (err, diffs) {
-            if (err) {
-                return done(err);
-            }
-            done();
+            done);
+    });
+}
+
+function compareJaffWithExpected(inFile, expectedFile, cb) {
+    var cmd = bin + ' ' + inFile;
+    child_process.exec(cmd, function (err, stdout, stderr) {
+        if (err) {
+            return cb(err);
+        }
+        fs.readFile(expectedFile, function (err, expectedData) {
+            expect(err, 'to be null');
+            expect(stdout.toString(), 'to equal', expectedData.toString());
+            cb();
         });
     });
 }
