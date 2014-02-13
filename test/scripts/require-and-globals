@@ -1,0 +1,43 @@
+#!/usr/bin/env jaff
+#begin coffee
+
+stream = require 'stream'
+
+indent = (lines) ->
+  lines.map (line) ->
+    '    ' + line
+
+#end
+# Keys in stream
+
+#filter !indent
+{Object.keys(stream)}
+#end
+
+# Global Methods
+
+#filter !indent
+{typeof ArrayBuffer}
+{typeof Buffer}
+{typeof DataView}
+{typeof Float32Array}
+{typeof Float64Array}
+{typeof GLOBAL}
+{typeof Int16Array}
+{typeof Int32Array}
+{typeof Int8Array}
+{typeof Uint16Array}
+{typeof Uint32Array}
+{typeof Uint8Array}
+{typeof Uint8ClampedArray}
+{typeof clearImmediate}
+{typeof clearInterval}
+{typeof clearTimeout}
+{typeof console}
+{typeof global}
+{typeof process}
+{typeof root}
+{typeof setImmediate}
+{typeof setInterval}
+{typeof setTimeout}
+#end

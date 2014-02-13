@@ -31,6 +31,8 @@ describe('Running scripts', function () {
     runScriptTest('languages-internals');
     runScriptTest('include-paths');
     runScriptTest('filter-must-shell-escape');
+    runScriptTest('require-and-globals');
+    runScriptTest('change-expand-quotes');
 });
 
 describe('script errors', function () {

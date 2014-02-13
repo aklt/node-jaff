@@ -1,0 +1,19 @@
+#begin coffee
+value = "A nice text"
+#end
+
+Here is a default quoted value: {value}
+
+Here are the default quotes: {__expand}
+
+#begin coffee
+
+__quotes '<', '>'
+
+#end
+
+Old quotes don't work anymore: {value}
+
+The new ones do: <value>
+
+TODO: __expand does not hold the right quotes:  <__expand>

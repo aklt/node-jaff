@@ -1,0 +1,13 @@
+
+Here is a default quoted value: A nice text
+
+Here are the default quotes: {
+}
+
+
+Old quotes don't work anymore: {value}
+
+The new ones do: A nice text
+
+TODO: __expand does not hold the right quotes:  {
+}

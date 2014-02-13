@@ -1,0 +1,36 @@
+#!/usr/bin/env jaff
+# Keys in stream
+
+    super_
+    Readable
+    Writable
+    Duplex
+    Transform
+    PassThrough
+    Stream
+
+# Global Methods
+
+    function
+    function
+    function
+    function
+    function
+    object
+    function
+    function
+    function
+    function
+    function
+    function
+    function
+    function
+    function
+    function
+    object
+    object
+    object
+    object
+    function
+    function
+    function
