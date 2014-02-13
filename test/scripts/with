@@ -1,0 +1,21 @@
+#begin coffee
+
+value = 'Hello world!'
+indent = (lines) ->
+  lines.map (line) ->
+    '    ' + line
+
+#end
+
+with...do...end
+
+#with lines
+Programs say
+{value}
+#do
+#  filter !indent
+#    filter sed -e 's/Hello/Greetings/'
+{JSON.stringify(lines[1])}
+#    end
+#  end
+#end
