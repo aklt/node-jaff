@@ -34,6 +34,7 @@ describe('Running scripts', function () {
     runScriptTest('require-and-globals');
     runScriptTest('change-expand-quotes');
     runScriptTest('with');
+    runScriptTest('with-filter');
 });
 
 describe('script errors', function () {
