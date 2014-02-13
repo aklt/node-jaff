@@ -20,6 +20,21 @@ if (process.argv.length === 2) {
     } else if (/^--?ve?r?s?i?o?n?/.test(arg)) {
         process.stdout.write('Jaff v' + jaff.version + '\n');
     } else {
+        var pathParts = arg.split(/\//g),
+            fileName = pathParts.pop(),
+            pathName = pathParts.join('/');
+
+        if (pathName.length > 1) {
+            // Hack to make require './foo' work
+            var workdir = pathName;
+            try {
+                process.chdir(workdir);
+            } catch (e) {
+                console.warn('Failed changing to', workdir, 'from', process.cwd());
+            }
+            arg = fileName;
+        }
+
         jaff.readFromUrl(arg).pipe(process.stdout);
     }
 } else {
