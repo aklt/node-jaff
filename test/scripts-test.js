@@ -37,6 +37,7 @@ describe('Running scripts', function () {
     runScriptTest('change-expand-quotes');
     runScriptTest('with');
     runScriptTest('with-filter');
+    runScriptTest('with-filter-bash');
 });
 
 describe('script errors', function () {

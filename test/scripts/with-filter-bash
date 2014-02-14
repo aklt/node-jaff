@@ -1,0 +1,9 @@
+#with bashOutput
+#filter bash -e
+echo foo | tr 'o' 'P'
+echo bar | sed -e 's/b/barb/'
+#end
+#do
+Result 1: {JSON.stringify(bashOutput[0])}
+Result 2: {JSON.stringify(bashOutput[1])}
+#end
