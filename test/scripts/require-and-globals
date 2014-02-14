@@ -26,6 +26,7 @@ indent = (lines) ->
 {typeof Int16Array}
 {typeof Int32Array}
 {typeof Int8Array}
+{typeof JSON}
 {typeof Uint16Array}
 {typeof Uint32Array}
 {typeof Uint8Array}
