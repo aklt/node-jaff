@@ -50,7 +50,7 @@ describe('script errors', function () {
 });
 
 function runScriptTest(scriptName) {
-    it(scriptName + ' passes', function (done) {
+    it('test/scripts/' + scriptName + ' passes', function (done) {
         compareJaffWithExpected(scripts + scriptName,
             scripts + scriptName + '.expected',
             done);

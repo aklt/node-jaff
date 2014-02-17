@@ -20,3 +20,8 @@ coffeeVar: {coffeeVar}
 Potatoes
 expand {__expand}
 #end
+#begin js
+ // Now we are using javascript
+#end
+
+Langauges is {__language}
