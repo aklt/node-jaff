@@ -1,0 +1,7 @@
+#begin coffee
+name = 'raw'
+#end
+Include interpreted
+#include include/{name}
+Include raw
+#include !include/{name}

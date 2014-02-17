@@ -1,0 +1,4 @@
+#begin coffee
+val = 'Schmetterling'
+#end
+Hier ist ein {val}.

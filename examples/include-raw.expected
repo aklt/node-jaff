@@ -1,0 +1,7 @@
+Include interpreted
+Hier ist ein Schmetterling.
+Include raw
+#begin coffee
+val = 'Schmetterling'
+#end
+Hier ist ein {val}.

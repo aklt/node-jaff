@@ -32,6 +32,8 @@ describe('Running examples', function () {
     runScriptTest('begin-if-else-include');
     runScriptTest('languages-internals');
     runScriptTest('include-paths');
+    runScriptTest('include-filename');
+    runScriptTest('include-raw');
     runScriptTest('filter-must-shell-escape');
     runScriptTest('require-and-globals');
     runScriptTest('change-expand-quotes');

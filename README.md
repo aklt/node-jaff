@@ -111,12 +111,12 @@ lines immediately following this branch of the conditional up to the next
         Not shown
     #end
 
-### `include <filename>`
+### `include <!filename|filename>`
 
 Attempt to include the file in `<filename>`.  If the file does not exist try
 if the file can be found in parent paths up to the root.
 
-* TODO add `include! <filename>` to include raw data?
+If filename is prefixed with a `!` include it without interpreting macros. 
 
 ### `run <command>`
 
