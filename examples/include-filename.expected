@@ -1,4 +1,3 @@
 filename: include-filename
-dirname: /home/alt/projects/node-jaff/examples
 filename: filename
-dirname: /home/alt/projects/node-jaff/examples/include
+TODO: add __dirname when contexts are fixed

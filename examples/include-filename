@@ -1,3 +1,6 @@
+#begin coffee
+remove = __dirname.length
+#end
 filename: {__filename}
-dirname: {__dirname}
 #include include/filename
+TODO: add __dirname when contexts are fixed
