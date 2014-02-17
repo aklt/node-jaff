@@ -1,7 +1,23 @@
 #begin coffee
 name = 'raw'
+include = (lines) ->
+  lines.map (line) ->
+    ' include ' + line
+
+raw = (lines) ->
+  lines.map (line) ->
+    ' raw ' + line
 #end
 Include interpreted
-#include include/{name}
+#filter sed -e 's/^/ -- /'
+#  filter !include
+#    include include/{name}
+#  end
+#end
 Include raw
-#include !include/{name}
+#filter sed -e 's/^/ -- /'
+#  filter !raw
+#    include !include/{name}
+#  end
+#end
+That's it!

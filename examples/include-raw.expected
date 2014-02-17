@@ -1,7 +1,8 @@
 Include interpreted
-Hier ist ein Schmetterling.
+ --  include Hier ist ein Schmetterling.
 Include raw
-#begin coffee
-val = 'Schmetterling'
-#end
-Hier ist ein {val}.
+ --  raw #begin coffee
+ --  raw val = 'Schmetterling'
+ --  raw #end
+ --  raw Hier ist ein {val}.
+That's it!
