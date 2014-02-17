@@ -42,6 +42,7 @@ describe('Running examples', function () {
     runScriptTest('with-filter');
     runScriptTest('with-filter-bash');
     runScriptTest('with-object');
+    runScriptTest('eval');
 });
 
 describe('script errors', function () {

@@ -1,0 +1,18 @@
+string:
+Hello string!
+object:
+{ foo: 
+   [ { bar: { hat: 100, cats: 'no' } },
+     { bob: [ 100, 300 ] },
+     { flap: { broo: 'goo', schmoo: 'doo', glue: 1001 } },
+     { hat: { yes: [ 10, 10, 100, 1000 ] } } ] }
+array:
+100
+200
+plain arrays become lines
+array with objects:
+100
+fresh foo
+{ obj: { a: 100, b: 200 } }
+{ hats: { g: 'big hat', c: 'caps' } }
+Foo

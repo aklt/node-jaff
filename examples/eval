@@ -1,0 +1,50 @@
+#begin coffee
+str = 'Hello string!'
+arr = [
+  100
+  200
+  'plain arrays become lines'
+  ]
+
+obj =
+  foo: [
+    bar:
+      hat: 100
+      cats: 'no'
+  ,
+    bob: [
+      100
+      300
+    ]
+  ,
+    flap:
+      broo: 'goo'
+      schmoo: 'doo'
+      glue: 1001
+  ,
+    hat:
+      yes: [ 10, 10, 100, 1000]
+  ]
+
+arrObj = [
+  100
+  'fresh foo'
+  obj:
+    a: 100
+    b: 200
+ ,
+  hats:
+    g: 'big hat'
+    c: 'caps'
+ ,
+  'Foo'
+]
+#end
+string:
+{str}
+object:
+{obj}
+array:
+{arr}
+array with objects:
+{arrObj}
