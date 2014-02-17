@@ -2,12 +2,12 @@
 
 var fs = require('fs'),
     path = require('path'),
-    scripts = __dirname + '/scripts/',
+    examples = path.normalize(__dirname + '/../examples/'),
     child_process = require('child_process'),
     expect = require('unexpected'),
     bin = path.normalize(__dirname + '/../bin/jaff');
 
-console.warn('Running', bin, 'on', scripts);
+console.warn('Running', bin, 'on', examples);
 
 describe('stdin', function () {
     it('can be piped through', function (done) {
@@ -22,7 +22,7 @@ describe('stdin', function () {
     });
 });
 
-describe('Running scripts', function () {
+describe('Running examples', function () {
     runScriptTest('if-else-false');
     runScriptTest('if-else-true');
     runScriptTest('if-elif-else');
@@ -43,7 +43,7 @@ describe('Running scripts', function () {
 
 describe('script errors', function () {
     it('recursive includes error', function (done) {
-        compareJaffWithExpected(scripts + 'include-recursive', '', function (err) {
+        compareJaffWithExpected(examples + 'include-recursive', '', function (err) {
             expect(err, 'not to be null');
             done();
         });
@@ -51,9 +51,9 @@ describe('script errors', function () {
 });
 
 function runScriptTest(scriptName) {
-    it('test/scripts/' + scriptName + ' passes', function (done) {
-        compareJaffWithExpected(scripts + scriptName,
-            scripts + scriptName + '.expected',
+    it('examples/' + scriptName + ' passes', function (done) {
+        compareJaffWithExpected(examples + scriptName,
+            examples + scriptName + '.expected',
             done);
     });
 }
