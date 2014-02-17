@@ -23,26 +23,26 @@ describe('stdin', function () {
 });
 
 describe('Running examples', function () {
-    runScriptTest('if-else-false');
-    runScriptTest('if-else-true');
-    runScriptTest('if-elif-else');
-    runScriptTest('if-else-nest-false');
-    runScriptTest('if-else-nest-true');
-    runScriptTest('if-else-include');
     runScriptTest('begin');
     runScriptTest('begin-if-else-include');
-    runScriptTest('languages-internals');
-    runScriptTest('include-paths');
-    runScriptTest('include-filename');
-    runScriptTest('include-raw');
-    runScriptTest('filter-must-shell-escape');
-    runScriptTest('require-and-globals');
     runScriptTest('change-expand-quotes');
+    runScriptTest('eval');
+    runScriptTest('filter-must-shell-escape');
+    runScriptTest('if-elif-else');
+    runScriptTest('if-else-false');
+    runScriptTest('if-else-include');
+    runScriptTest('if-else-nest-false');
+    runScriptTest('if-else-nest-true');
+    runScriptTest('if-else-true');
+    runScriptTest('include-filename');
+    runScriptTest('include-paths');
+    runScriptTest('include-raw');
+    runScriptTest('languages-internals');
+    runScriptTest('require-and-globals');
     runScriptTest('with');
     runScriptTest('with-filter');
     runScriptTest('with-filter-bash');
     runScriptTest('with-object');
-    runScriptTest('eval');
 });
 
 describe('script errors', function () {
