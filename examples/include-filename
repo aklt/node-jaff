@@ -1,0 +1,3 @@
+filename: {__filename}
+dirname: {__dirname}
+#include include/filename
