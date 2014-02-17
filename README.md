@@ -140,9 +140,16 @@ If the `<command>` is prefixed with an exclamation mark, command is taken to be
 a function to filter commands through as in the example at the top of this
 document.
 
-
 `[1]` This is not quite correct at the moment because shell expansion is not taken
 correctly into account.
+
+### `with <varname|varname.>` ... `do` ... `end`
+
+Create `varname` as an array of the lines containing the line following `with` up
+to the line before `do` that is accessible in the `do` ... `end` block.
+
+If suffixed with a dot `varname` will become an object with the properties of
+the `.` prefixed lines between `do` and `end`.
 
 ## Variable expansions
 

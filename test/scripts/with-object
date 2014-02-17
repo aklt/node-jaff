@@ -1,0 +1,20 @@
+#begin coffee
+value = 'Hello'
+date = new Date('2012-12-12').toISOString()
+#end
+#with foo.
+#filter sed -e 's/DATE/{date}/'
+.hats = {value}
+.lines =
+1
+2
+3
+.fooLines = foo1
+foo2
+foo3
+.quotes =   "  The leading and trailing space is preserved  "
+.date = DATE    
+#end
+#do
+This is foo {JSON.stringify(foo, 0, 2)}.
+#end

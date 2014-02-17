@@ -38,6 +38,7 @@ describe('Running scripts', function () {
     runScriptTest('with');
     runScriptTest('with-filter');
     runScriptTest('with-filter-bash');
+    runScriptTest('with-object');
 });
 
 describe('script errors', function () {
