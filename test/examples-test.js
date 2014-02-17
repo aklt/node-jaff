@@ -29,6 +29,7 @@ describe('Running examples', function () {
     runScriptTest('if-else-nest-false');
     runScriptTest('if-else-nest-true');
     runScriptTest('if-else-include');
+    runScriptTest('begin');
     runScriptTest('begin-if-else-include');
     runScriptTest('languages-internals');
     runScriptTest('include-paths');

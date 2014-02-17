@@ -1,0 +1,10 @@
+#begin coffee
+# Here is some coffee script
+foo = __filename
+count = 0
+bar = ->
+  return count += 1
+# Change the quotes
+__quotes '<', '>'
+#end
+Values can be output: <foo> <bar()> <bar()> <bar()>
