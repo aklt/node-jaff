@@ -1,7 +1,7 @@
 {
   "name": "jaff",
   "description": "Jaff Ain't Filtering Files",
-  "version": "0.0.4",
+  "version": "0.0.4-dev",
   "author": "Anders Thøgersen <anders@bladre.dk>",
   "keywords": [
     "macro",
