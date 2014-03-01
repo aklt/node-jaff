@@ -6,5 +6,9 @@ bar = ->
   return count += 1
 # Change the quotes
 __quotes '<', '>'
+
+# Require something
+coffee = require 'coffee-script'
 #end
 Values can be output: <foo> <bar()> <bar()> <bar()>
+Using Coffee Script version <coffee.VERSION>
